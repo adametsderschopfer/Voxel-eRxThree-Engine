@@ -5,7 +5,7 @@ const assets = require('./assets');
 const scripts = require('./scripts');
 
 function watchMainScripts() {
-  return watch(['app/main/**/*.js'], series(scripts.developBuild, electron.stop, electron.start));
+  return watch(['app/logic/**/*.js'], series(scripts.developBuild, electron.stop, electron.start));
 }
 
 function watchRendererScripts() {
