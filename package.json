@@ -1,0 +1,55 @@
+{
+  "name": "Voxel-eRxThree-Engine",
+  "version": "1.0.0",
+  "description": "Voxel Engine written with rxjs - electron - Three.js",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "dev": "gulp develop",
+    "test": "electron-mocha --renderer -R spec --require @babel/register test/**/*.spec.js",
+    "lint": "eslint --no-ignore tasks app test *.js",
+    "format": "npm run private:format -- --write",
+    "check-format": "npm run private:format -- --list-different",
+    "pack:win": "gulp pack-win",
+    "private:format": "prettier gulpfile.js babel.config.js \"tasks/*.js\" \"app/**/*.js\" \"test/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adametsofficial/Voxel-eRxThree-Engine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adametsofficial/Voxel-eRxThree-Engine/issues"
+  },
+  "homepage": "https://github.com/adametsofficial/Voxel-eRxThree-Engine#readme",
+  "dependencies": {
+    "@babel/register": "^7.9.0",
+    "rxjs": "^7.0.1",
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "browser-sync": "^2.26.7",
+    "chai": "^4.1.0",
+    "electron": "^8.2.2",
+    "electron-builder": "^22.4.1",
+    "electron-devtools-installer": "^3.0.0",
+    "electron-mocha": "^8.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-react": "^7.19.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2"
+  }
+}
