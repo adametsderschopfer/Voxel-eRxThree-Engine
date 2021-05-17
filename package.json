@@ -1,8 +1,8 @@
 {
-  "name": "Voxel-eRxThree-Engine",
+  "name": "voxel-erxthree-engine",
   "version": "1.0.0",
   "description": "Voxel Engine written with rxjs - electron - Three.js",
-  "main": "index.js",
+  "main": "init.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "dev": "gulp develop",

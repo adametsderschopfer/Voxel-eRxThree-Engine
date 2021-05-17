@@ -6,7 +6,7 @@ const inject = require('gulp-inject-string');
 function build() {
   return src('app/**/*.js')
     .pipe(babel())
-    .pipe(inject.replace('process.env.NODE_ENV', '"production"'))
+    .pipe(inject.replace('process.env.NODE_ENV', 'production'))
     .pipe(dest('build'));
 }
 
