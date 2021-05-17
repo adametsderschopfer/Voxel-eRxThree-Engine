@@ -2,7 +2,7 @@ const electronBuilder = require('electron-builder');
 
 function packForWin() {
   return builder.build({
-    targets: builder.Platform.WINDOWS.createTarget();
+    targets: builder.Platform.WINDOWS.createTarget()
   });
 }
 
